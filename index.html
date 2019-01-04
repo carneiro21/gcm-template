@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,6 +27,7 @@
 </head>
 
 <body>
+    <!-- HEADER-->
     <nav class="navbar navbar-dark  shadow bg-dark navbar-expand p-0" style="z-index:1030">
         <a class="navbar-brand col-sm-2 col-md-2 mr-0 font-weight-normal" href="#">
             <span id="textGCM">
@@ -43,16 +44,41 @@
             </li>
         </ul>
     </nav>
+    <!-- FIM HEADER-->
+
+    <!-- MENU -->
     <div class="container-fluid">
         <div class="row">
             <nav class="col-md-2 d-none d-md-block bg-light sidebar">
                 <div class="sidebar-sticky">
-                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center mt-4 mb-1 text-muted">
+                    <h6 class="sidebar-heading  mt-4 mb-1 text-muted">
+                        Funcionários
+                    </h6>                           
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="text-menu">
+                                    <i class="fas fa-user-tie"></i>
+                                    Cadastrar Funcionário
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="text-menu">
+                                    <i class="fas fa-user-tie"></i>
+                                    Consultar Funcionário
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <h6 class="sidebar-heading  mt-4 mb-1 text-muted">
                          Pacientes
                     </h6>                           
-                    <ul class="nav flex-column mb-2">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">
+                            <a class="nav-link" href="#">
                                 <span class="text-menu">
                                     <i class="fas fa-user"></i>
                                     Cadastrar Paciente
@@ -60,24 +86,48 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">
+                            <a class="nav-link" href="#">
                                 <span class="text-menu">
                                     <i class="fas fa-user"></i>
-                                    Alterar Paciente
-                                </span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">
-                                <span class="text-menu">
-                                    <i class="fas fa-user"></i>
-                                    Excluir Paciente
+                                    Consultar Paciente
                                 </span>
                             </a>
                         </li>
                     </ul>
+
+                    <h6 class="sidebar-heading  mt-4 mb-1 text-muted">
+                            Consultas Médicas
+                       </h6>                           
+                       <ul class="navbar-nav">
+                           <li class="nav-item">
+                               <a class="nav-link" href="#">
+                                   <span class="text-menu">
+                                       <i class="fas fa-address-card"></i>
+                                       Marcar Consulta
+                                   </span>
+                               </a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link" href="#">
+                                   <span class="text-menu">
+                                       <i class="fas fa-address-card"></i>
+                                       Cancelar Consulta
+                                   </span>
+                               </a>
+                           </li>
+                       </ul>
+
+                    
+
                 </div>
             </nav>
+            <!-- FIM MENU -->
+
+            <!-- CONTEUDO -->
+            <div class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+            </div>
+            <!-- FIM CONTEUDO -->
         </div>
     </div>
 </body>
