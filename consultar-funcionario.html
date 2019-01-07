@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>GCM - Gerenciamento de Cliníca Médica</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 3.3.6 -->
+  
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="css/gcm.css">
+</head>
+
+<body>
+    <!-- HEADER-->
+    <nav class="navbar navbar-dark  shadow bg-dark navbar-expand p-0" style="z-index:1030">
+        <a class="navbar-brand col-sm-2 col-md-2 mr-0 font-weight-normal" href="#">
+            <span id="textGCM">
+                GCM 
+                &nbsp; 
+            </span>
+            <i class="fas fa-star-of-life" style="color:red;"></i>
+        </a>
+        <input type="text" placeholder="Pesquisar" aria-label="Pesquisar" 
+                            class="form-control form-control-dark">
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="#">Sair</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- FIM HEADER-->
+
+    <!-- MENU -->
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading  mt-4 mb-1 text-muted">
+                        Funcionários
+                    </h6>                           
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="text-menu">
+                                    <i class="fas fa-user-tie"></i>
+                                    Cadastrar Funcionário
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="text-menu">
+                                    <i class="fas fa-user-tie"></i>
+                                    Consultar Funcionário
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <h6 class="sidebar-heading  mt-4 mb-1 text-muted">
+                         Pacientes
+                    </h6>                           
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="text-menu">
+                                    <i class="fas fa-user"></i>
+                                    Cadastrar Paciente
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="text-menu">
+                                    <i class="fas fa-user"></i>
+                                    Consultar Paciente
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <h6 class="sidebar-heading  mt-4 mb-1 text-muted">
+                            Consultas Médicas
+                       </h6>                           
+                       <ul class="navbar-nav">
+                           <li class="nav-item">
+                               <a class="nav-link" href="#">
+                                   <span class="text-menu">
+                                       <i class="fas fa-address-card"></i>
+                                       Marcar Consulta
+                                   </span>
+                               </a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link" href="#">
+                                   <span class="text-menu">
+                                       <i class="fas fa-address-card"></i>
+                                       Cancelar Consulta
+                                   </span>
+                               </a>
+                           </li>
+                       </ul>
+
+                    
+
+                </div>
+            </nav>
+            <!-- FIM MENU -->
+
+            <!-- CONTEUDO -->
+            <div class="col-md-10  px-4  bg-light">
+                <div class="row">
+                    <div class="col-md-12">
+                         &nbsp; 
+                        <h4>
+                            <i class="fas fa-user-tie"></i>
+                            Consultar Funcionário
+                        </h4>
+                        <hr>
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h6>Dados da Pesquisa</h6>
+                            </div>
+                            <div class="card-body">
+                                <form> 
+                                    <div class="row">
+                                        <div class="col-md-9 collForm">
+                                            <label for="nome">Nome:</label>
+                                            <input type="nome" class="form-control" id="nome">
+                                        </div>
+                                        <div class="col-md-2">
+                                                
+                                        </div>
+                                        <div class="col-md-3 collForm">
+                                            <label for="nome">CPF:</label>
+                                            <input type="nome" class="form-control" id="nome">
+                                        </div>
+                                        <div class="col-md-3 collForm">
+                                            <label for="nome">RG:</label>
+                                            <input type="nome" class="form-control" id="nome">
+                                        </div>
+                                        <div class="col-md-3 collForm">
+                                            <label for="nome">Matrícula:</label>
+                                            <input type="nome" class="form-control" id="nome">
+                                        </div>
+                                        <div class="col-md-12 collForm">
+                                                
+                                        </div>
+                                        <div class="col-md-3 collForm">
+                                            <label for="nome">Profissão:</label>
+                                            <select  class="form-control">
+                                                    <option>Selecione</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3 collForm">
+                                            <label for="nome">Nível do Cargo:</label>
+                                            <select  class="form-control">
+                                                    <option>Selecione</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3 collForm">
+                                            <label for="nome">Setor:</label>
+                                            <select  class="form-control">
+                                                    <option>Selecione</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12 collForm">
+                                                
+                                        </div>
+                                        <div class="col-md-3 collForm">
+                                            <label for="nome">Número do Registro</label>
+                                            <input type="nome" class="form-control" id="nome">
+                                        </div>
+                                    </div>   
+                                </form>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                &nbsp; 
+
+                <div class="row">
+                    <div class="col-md-12 text-right">
+                            <button type="button" class="btn btn-primary">
+                                Pesquisar
+                            </button>
+                            <button type="button" class="btn btn-danger">
+                                Cancelar
+                            </button>
+                    </div>    
+                </div>
+                &nbsp;
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h6>Resultado da Pesquisa</h6>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                            <th scope="col">Matrícula</th>
+                                            <th scope="col">Nome</th>
+                                            <th scope="col">Número do Registro</th>
+                                            <th scope="col">Profissão</th>
+                                            <th scope="col">Setor</th>
+                                            <th scope="col">Ações</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr style="font-size: 0.9em;">
+                                                <td>12345678</td>
+                                                <td>Fulano Ciclano Beltrano</td>
+                                                <td>205545/DF</td>
+                                                <td>Médico - Cardiologista</td>
+                                                <td>Aréa Médica</td>
+                                                <td>
+                                                    <a href="#">
+                                                        <img src="icons/icon_pesquisa.png" width="20px" height="20px">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="icons/icon_visualizar_cadastro.png" width="20px" height="20px">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="icons/icon_remover.png" width="20px" height="20px">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr style="font-size: 0.9em;">
+                                                <td>12345678</td>
+                                                <td>Fulano Ciclano Beltrano</td>
+                                                <td>204199/DF</td>
+                                                <td>Médico - Cardiologista</td>
+                                                <td>Aréa Médica</td>
+                                                <td>
+                                                    <a href="#">
+                                                        <img src="icons/icon_pesquisa.png" width="20px" height="20px">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="icons/icon_visualizar_cadastro.png" width="20px" height="20px">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="icons/icon_remover.png" width="20px" height="20px">
+                                                    </a>
+                                                </td>
+                                                </tr>
+                                                <tr style="font-size: 0.9em;">
+                                                    <td>12345678</td>
+                                                    <td>Fulano Ciclano Beltrano de Solza Lima</td>
+                                                    <td>207482/DF</td>
+                                                    <td>Médico - Cirugião Obstetreta</td>
+                                                    <td>Aréa Médica</td>
+                                                    <td>
+                                                        <a href="#">
+                                                            <img src="icons/icon_pesquisa.png" width="20px" height="20px">
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="icons/icon_visualizar_cadastro.png" width="20px" height="20px">
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="icons/icon_remover.png" width="20px" height="20px">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                        </tbody>
+                                 </table>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                &nbsp;
+            </div>
+            <!-- FIM CONTEUDO -->
+    </div>
+</body>
+</html>
